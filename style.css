@@ -1,0 +1,25 @@
+/* Generel */
+#shadow {
+  pointer-events: none;
+}
+
+/* SVG */
+
+#body,
+#mesh,
+#sole1,
+#sole2 {
+  cursor: pointer;
+}
+
+.hightlight {
+  fill: gold;
+}
+
+/* Colors */
+.color_selector {
+  height: 250px;
+  width: 150px;
+  display: inline-block;
+  cursor: pointer;
+}
