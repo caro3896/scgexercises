@@ -26,42 +26,47 @@ function init(){
 
     body.addEventListener("mouseover", function( event ) {
         // highlight the mouseover target
-        event.target.style.fill = "orange";
-      
+        event.target.style.stroke = "gold";
+        event.target.style.strokeWidth = "5";
+
         // reset the color after a short delay
         setTimeout(function() {
-          event.target.style.fill = "";
-        }, 500);
-      }, false);
+            event.target.style.stroke = "";
+          }, 1000);
+        }, false);
+      
 
       mesh.addEventListener("mouseover", function( event ) {
         // highlight the mouseover target
-        event.target.style.fill = "orange";
+        event.target.style.stroke = "aqua";
+        event.target.style.strokeWidth = "5";
       
         // reset the color after a short delay
         setTimeout(function() {
-          event.target.style.fill = "";
-        }, 500);
+          event.target.style.stroke = "";
+        }, 1000);
       }, false);
 
       sole1.addEventListener("mouseover", function( event ) {
         // highlight the mouseover target
-        event.target.style.fill = "orange";
+        event.target.style.stroke = "greenyellow";
+        event.target.style.strokeWidth = "5";
       
         // reset the color after a short delay
         setTimeout(function() {
-          event.target.style.fill = "";
-        }, 500);
+          event.target.style.stroke = "";
+        }, 1000);
       }, false);
 
       sole2.addEventListener("mouseover", function( event ) {
         // highlight the mouseover target
-        event.target.style.fill = "orange";
+        event.target.style.stroke = "orange";
+        event.target.style.strokeWidth = "5";
       
         // reset the color after a short delay
         setTimeout(function() {
-          event.target.style.fill = "";
-        }, 500);
+          event.target.style.stroke = "";
+        }, 1000);
       }, false);
 
 
@@ -84,6 +89,8 @@ function init(){
     document.querySelectorAll(".color_selector").forEach(element => {
         element.style.backgroundColor =
         element.addEventListener("click", event => {
+            // event.target.classList.remove("selection");
+            // event.target.classList.add("selection");
             currentColor = event.target.style.backgroundColor;
         });
     });

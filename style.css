@@ -1,9 +1,18 @@
 /* Generel */
+body {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+}
+
 #shadow {
   pointer-events: none;
 }
 
 /* SVG */
+svg {
+  border-radius: 20px;
+}
 
 #body,
 #mesh,
@@ -12,14 +21,25 @@
   cursor: pointer;
 }
 
-.hightlight {
-  fill: gold;
+/* Colors */
+#color_box {
+  margin: auto;
+  margin-left: 20px;
 }
 
-/* Colors */
+#colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
 .color_selector {
-  height: 250px;
-  width: 150px;
-  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
   cursor: pointer;
+}
+
+.selection {
+  border: 2px solid black;
 }
